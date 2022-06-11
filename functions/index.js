@@ -20,8 +20,8 @@ app.get("/test", (req, res) => {
 
 app.get("/destinations", getAllDestinations);
 app.get("/destinations/:destinationId", getDestinationById);
-app.get("/destinations", addDestination);
-app.patch("/destinations/:/destinationId", updateDestination);
+app.post("/destinations", addDestination);
+app.patch("/destinations/:destinationId", updateDestination);
 app.delete("/destinations/:destinationId", deleteDestination);
 app.patch("/destinations/:destinationId/category", updateDestinationCategory);
 
